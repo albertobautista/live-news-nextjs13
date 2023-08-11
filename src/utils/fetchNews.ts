@@ -6,7 +6,6 @@ const fetchNews = async (
   keywords?: string,
   isDynamic?: boolean
 ) => {
-  console.log("ALBERTO fetchNews", category, keywords, isDynamic);
   // GraphQL query
   const query = gql`
     query myQuery(
@@ -67,10 +66,7 @@ const fetchNews = async (
     }
   );
 
-  console.log("ALBERTO resss", res);
-
   const newResponse = await res.json();
-  console.log("ALBERTO newResponse", newResponse);
 
   // Sort function by images vs not images present
   const news = sortNewsByImage(newResponse.data.myQuery);

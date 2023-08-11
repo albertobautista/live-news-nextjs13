@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { LiveTimestamp } from "live-news-app/components";
-import { notFound } from "next/navigation";
+// import { notFound } from "next/navigation";
 
 type Props = {
   searchParams?: Article;
@@ -10,11 +10,10 @@ const ArticlePage = ({ searchParams }: Props) => {
     (searchParams && Object.entries(searchParams).length === 0) ||
     !searchParams
   ) {
-    return notFound();
+    return <h1 className="text-3xl pt-5 text-center">No results</h1>;
   }
 
   const article: Article = searchParams;
-  console.log(article);
   return (
     <article>
       <section className="flex flex-col lg:flex-row pb-24 px-0 lg:px-10 pt-10">

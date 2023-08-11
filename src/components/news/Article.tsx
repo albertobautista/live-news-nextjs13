@@ -6,7 +6,6 @@ type Props = {
   article: Article;
 };
 const Article = ({ article }: Props) => {
-  console.log(article.image);
   return (
     <article className="bg-slate-100 border border-slate-300 dark:bg-slate-800 flex flex-col rounded-lg shadow-sm hover:scale-105 hover:shadow-lg hover:bg-scale-200 transition-all duration-200 ease-out">
       {article.image && (
