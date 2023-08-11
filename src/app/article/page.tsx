@@ -6,14 +6,14 @@ type Props = {
   searchParams?: Article;
 };
 const ArticlePage = ({ searchParams }: Props) => {
-  if (
-    (searchParams && Object.entries(searchParams).length === 0) ||
-    !searchParams
-  ) {
-    return <h1 className="text-3xl pt-5 text-center">No results</h1>;
-  }
+  // if (
+  //   (searchParams && Object.entries(searchParams).length === 0) ||
+  //   !searchParams
+  // ) {
+  //   return <h1 className="text-3xl pt-5 text-center">No results</h1>;
+  // }
 
-  const article: Article = searchParams;
+  const article: Article = searchParams!;
   return (
     <article>
       <section className="flex flex-col lg:flex-row pb-24 px-0 lg:px-10 pt-10">
