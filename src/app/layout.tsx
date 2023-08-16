@@ -17,12 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Providers>
-        <body className="bg-gray-100 dark:bg-zinc-900 transition-all duration-700">
+        <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-zinc-900 transition-all duration-700">
           <Header />
-          <div className="max-w-6xl mx-auto">{children}</div>
-        </body>
-        <div className=" mx-auto bg-slate-100 dark:bg-slate-800">
-          <Footer />
+          <main className="flex-grow max-w-6xl mx-auto">{children}</main>
+          <footer className="bg-slate-200 dark:bg-slate-800">
+            <Footer />
+          </footer>
         </div>
       </Providers>
     </html>
