@@ -29,7 +29,7 @@ const Footer = () => {
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © {currentYear} Alberto Bautista . All Rights Reserved.
         </span>
-        <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+        <div className="flex space-x-5 sm:justify-center mt-0">
           <a
             href="https://twitter.com/AlbertoBau14"
             target="_blank"
